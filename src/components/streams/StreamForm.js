@@ -16,7 +16,7 @@ class StreamForm extends Component {
         const className = `field ${formProps.meta.error && formProps.meta.touched ? 'error' : ''}`
         return (
             <div className={className}>
-                <label>{formProps.label}</label>
+                <label style={{color: 'whitesmoke', fontSize: '15px'}}>{formProps.label}</label>
                 <input {...formProps.input} autoComplete="off" />
                 {this.renderError(formProps.meta)}
             </div>

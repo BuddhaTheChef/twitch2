@@ -45,9 +45,9 @@ class StreamList extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{background: 'rebeccapurple', padding: '35px', borderRadius: '10px' }}>
               <h2>Streams</h2>  
-              <div className="ui celled list">{this.renderList()}</div>
+              <div className="ui celled list" style={{fontSize: '18px'}}>{this.renderList()}</div>
               {this.renderCreate()}
             </div>
         )
