@@ -1,5 +1,23 @@
-body {
-    background:rgb(33,33,33);
+#root {
+    background:rgba(33,33,33,0.9);
     color: whitesmoke;
-    margin: 20px 0px;
+    margin: 0px 220px;
+    height: -webkit-fill-available;
+    padding: 30px 30px;
+}
+
+
+body {
+    background-image: url("./assets/tBackground.jpg");
+     background-size: cover;
+  	-webkit-animation: moveIt 100s linear infinite;
+}
+
+@-webkit-keyframes moveIt {
+  from {
+    background-position: 0vw;
+  }
+  to {
+    background-position: 100vw;
+  }
 }
